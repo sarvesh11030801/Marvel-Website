@@ -8,6 +8,7 @@
         <link rel="manifest" href="Images/Fav Icon.png">
         <link rel = "stylesheet" href = "Stylesheet.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </head>
@@ -16,15 +17,25 @@
             <div class = "banner"></div>
         </header>
         <nav>
-            <a class = "menu-btn" href = "#">Home</a>
-            <a class = "menu-btn" href="#">Movies</a>
-            <a class = "menu-btn" href="#">TV Shows</a>
-            <a class = "menu-btn"href="#">Games</a>
-            <a class = "menu-btn"href="#">Characters</a>
-            <a href="#" class = "menu-btn flex-align-right">Login/SignUp</a>
+            <div class = "nav">
+                <a class = "menu-btn" href = "#">Home</a>
+                <a class = "menu-btn" href = "#">Movies</a>
+                <a class = "menu-btn" href = "#">TV Shows</a>
+                <a class = "menu-btn"href = "#">Games</a>
+                <a class = "menu-btn"href = "#">Characters</a>
+                <div class = "nav1">
+                    <a href = "#" class = "menu-btn flex-align-right">Login/SignUp</a>
+                    <input type="checkbox" id="toggle">
+                    <label class="toggle" for="toggle">
+                        <i class="bx bxs-sun"></i>
+                        <i class="bx bx-moon"></i>
+                        <span class="ball"></span>
+                    </label>
+                </div>
+            </div>
         </nav>
         <main>
-            <section>
+            <section class = "section1">
                 <h2><span>Movies</span></h2>
                 <video src="Videos/marvel-studios-avengers-endgame-official-trailer.mp4" width="33%" poster="Images/Avengers Endgame.jpg" controls></video>
                 <video src="Videos/marvel-studios-avengers-infinity-war-official-trailer.mp4" width="33%" poster="Images/Avengers Infinity War.jpg" controls></video>
@@ -36,13 +47,15 @@
                 <video src="Videos/marvel-studios-black-panther-wakanda-forever-official-trailer.mp4" width="33%" poster="Images/Black Panther Wakanda Forever.jpg" controls></video>
                 <video src="Videos/marvels-captain-america-civil-war-trailer-2.mp4" width="33%" poster="Images/Captain America Civil War.jpg" controls></video>
             </section>
-            <section>
+            <hr>
+            <section class = "section2">
                 <h2><span>TV Shows</span></h2>
                 <iframe width="33%" height="50%" src="https://www.youtube.com/embed/x7Krla_UxRg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <iframe width="33%" height="50%" src="https://www.youtube.com/embed/IWBsDaFWyTE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <iframe width="33%" height="50%" src="https://www.youtube.com/embed/Tp_YZNqNBhw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </section>
-            <section>
+            <hr>
+            <section class = "section3">
                 <h2><span>Games</span></h2>
                 <div class="container"> 
                     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -80,7 +93,8 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <hr>
+            <section class = "section4">
                 <h2><span>Characters</span></h2>
                 <div class = "images">
                     <a target = "_blank" href = ""><img src="Images/Iron Man.jpg" alt="" title = "Iron-Man"></a>
@@ -106,7 +120,8 @@
                     <a target = "_blank" href = ""><img src="Images/Deadpool.jpg" alt="" title = "Deadpool"></a>
                 </div>
             </section>
-            <section>
+            <hr>
+            <section class = "section5" id = "s5">
                 <h2>
                     Creater
                 </h2>
@@ -129,5 +144,6 @@
             <a class = "menu-btn" href="#">Privacy Policy</a>
             <a class = "menu-btn" href="#">&copy; 1993 | Marvel</a>
         </footer>
+        <script src = "script.js"></script>
     </body>
 </html>
